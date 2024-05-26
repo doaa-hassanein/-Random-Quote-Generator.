@@ -1,8 +1,6 @@
 var btn = document.getElementById("btn");
 var output = document.getElementById("output");
 var quotes = [
-
-
     " “Be yourself; everyone else is already taken. ― Oscar Wilde” ",
 
     ' "Two things are infinite: the universe and human stupidity; and I"m not sure about the universe. ― Albert Einstein',
@@ -25,14 +23,11 @@ var quotes = [
 
     "Be the change that you wish to see in the world.― Mahatma Gandhi",
 
-    " Don’t walk in front of me… I may not follow Don’t walk behind me… I may not lead Walk beside me… just be my friend”― Albert Camus" ,
+    " Don’t walk in front of me… I may not follow Don’t walk behind me… I may not lead Walk beside me… just be my friend”― Albert Camus",
 
-    " “Always forgive your enemies; nothing annoys them so much.”― Oscar Wilde " ,
+    " “Always forgive your enemies; nothing annoys them so much.”― Oscar Wilde ",
 
     "  “We accept the love we think we deserve.” ― Stephen Chbosky, The Perks of Being a Wallflower "
-
-
-
 
 ]
 
@@ -43,7 +38,4 @@ btn.addEventListener('click', function () {
 
 })
 
-
-
-
-
+/***********************************************************************************************************************************/
