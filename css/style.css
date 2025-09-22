@@ -1,46 +1,173 @@
- div{
-    margin-top: 50px;
-    text-align: center;
-    
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #2c3e50 0%, #2575fc 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        
+        h1 {
+            font-size: 42px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 40px 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #2c3e50;
+            position: relative;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .quote-icon {
+            position: absolute;
+            font-size: 60px;
+            color: rgba(106, 17, 203, 0.1);
+        }
+        
+        .quote-icon.left {
+            top: 10px;
+            left: 20px;
+        }
+        
+        .quote-icon.right {
+            bottom: 10px;
+            right: 20px;
+            transform: rotate(180deg);
+        }
+        
+        #output {
+            font-size: 26px;
+            line-height: 1.6;
+            color: #2c3e50;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .author {
+            display: block;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #6a11cb;
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        .button-container {
+            margin-top: 30px;
+        }
+        
+        #btn {
+            width: 250px;
+            height: 60px;
+            background: linear-gradient(to right, #2c3e50, #2575fc);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
 }
-
-h1{
-    font-size: 80px;
-    font-family: Impact;
-    font-weight: 900;
-}
-
-p{
-    font-size: 35px;
-    font-weight: 400;
-    
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-button{
-    width: 250px;
-    height: 80px;
-    background-color: blue;
-    color: white;
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-}
-button:hover{
-    background-color: green;
-} 
-
-
-
-
-
+        
+        #btn:hover {
+            background: linear-gradient(to right, #2575fc, #2c3e50);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        #btn:active {
+            transform: translateY(1px);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            #output {
+                font-size: 22px;
+            }
+            
+            .author {
+                font-size: 18px;
+            }
+            
+            #btn {
+                width: 220px;
+                height: 55px;
+                font-size: 16px;
+            }
+            
+            .quote-box {
+                padding: 30px 20px;
+            }
+        }
+        
+        /* Animation effects */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }

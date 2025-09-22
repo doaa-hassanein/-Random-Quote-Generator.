@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
@@ -17,18 +18,27 @@
 
 <body>
 
-    <div>
-        <h1>Quote of the Day</h1>
-        <p >Press the button below to recieve a random quote!</p>
+   
+
+    <div class="container">
+        <h1>Inspirational Quote Generator</h1>
+        <p class="subtitle">Click the button to discover a new inspiring quote</p>
         
-        <button id="btn" >New Quote</button>
-
-        <p id="output"></p>
-
+        <div class="quote-box">
+            <i class="fas fa-quote-left quote-icon left"></i>
+            <i class="fas fa-quote-left quote-icon right"></i>
+            <div id="output">Click the button below to display an inspiring quote</div>
+        </div>
+        
+        <div class="button-container">
+            <button id="btn">
+                <i class="fas fa-random"></i>
+                New Quote
+            </button>
+        </div>
+        
+        <p class="footer">© 2023 Inspirational Quote Generator | All rights reserved</p>
     </div>
-
-
-
 
 
 
